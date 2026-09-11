@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartment | Silk Road Holiday Homes</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main class="container">
+  <div class="breadcrumbs"><a href="#">Main</a><span>/</span><a href="index.html">Catalog</a><span>/</span><span id="apt-crumb" style="margin:0"></span></div>
+  <div class="apt-head">
+    <div>
+      <h1 id="apt-title"></h1>
+      <div class="card-area" id="apt-area"></div>
+    </div>
+    <span class="badge-host" style="position:static"><i></i>Superhost on Airbnb</span>
+  </div>
+
+  <div class="gallery-wrap">
+    <div class="gallery" id="gallery"></div>
+    <div class="gallery-count">Show all photos</div>
+  </div>
+
+  <div class="apt-layout">
+    <div>
+      <div class="section">
+        <div class="facts" id="facts"></div>
+      </div>
+
+      <div class="section">
+        <div class="features">
+          <div class="feature"><img src="assets/img/geo.svg" alt=""><b>Perfect location</b>close to the free beach</div>
+          <div class="feature"><img src="assets/img/stars.svg" alt=""><b>Cleanliness</b>impeccable cleanliness and coziness</div>
+          <div class="feature"><img src="assets/img/key.svg" alt=""><b>Self check-in</b>drop in anytime</div>
+          <div class="feature"><img src="assets/img/chat.svg" alt=""><b>Prompt responses</b>instant support on all matters</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>About this apartment</h2>
+        <div id="desc"></div>
+      </div>
+
+      <div class="section">
+        <h2>Amenities</h2>
+        <ul class="amen" id="amen"></ul>
+      </div>
+
+      <div class="section" id="availability">
+        <div class="cal-head">
+          <h2 style="margin:0">Availability</h2>
+          <div class="cal-legend">
+            <span><i style="background:#fff;border:1px solid #ddd"></i>Free</span>
+            <span><i style="background:#f4f4f4"></i>Booked</span>
+            <span><i style="background:#fc9403"></i>Your dates</span>
+          </div>
+        </div>
+        <div class="cal-months" id="cal"></div>
+        <div class="cal-msg" id="cal-msg"></div>
+        <div class="sync-note"><span class="dot-green"></span><span>Calendar is synced with <b>Airbnb</b> and <b>Booking.com</b>, booked dates close on all channels at once.</span></div>
+      </div>
+
+      <div class="section">
+        <h2>House rules</h2>
+        <ul class="rules" id="rules"></ul>
+      </div>
+
+      <div class="section" style="border-bottom:0">
+        <h2>Location</h2>
+        <iframe class="map" id="map" title="Map"></iframe>
+        <p class="muted" style="margin-top:8px"><span id="map-area"></span>, Dubai. The exact address and self check-in instructions are sent after booking.</p>
+      </div>
+    </div>
+
+    <aside class="book-box">
+      <div class="price js-price"></div>
+      <div class="bb-dates">
+        <div><small>Check-in</small><span id="bb-in"></span></div>
+        <div><small>Check-out</small><span id="bb-out"></span></div>
+      </div>
+      <div class="bb-guests">
+        <div><small>Guests</small><span class="muted" id="g-max"></span></div>
+        <div class="stepper"><button type="button" id="g-minus" aria-label="Fewer guests">−</button><b id="bb-g"></b><button type="button" id="g-plus" aria-label="More guests">+</button></div>
+      </div>
+      <ul class="lines" id="lines"></ul>
+      <div class="bb-actions">
+        <button class="btn block" id="book-now" type="button">Book now</button>
+        <a class="btn-wa js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25d366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/><path fill="#fff" d="M17.3 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a7.6 7.6 0 0 1-3.8-3.3c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3Z"/></svg>Ask on WhatsApp</a>
+      </div>
+      <div class="bb-hint">You won't be charged until the next step</div>
+    </aside>
+  </div>
+</main>
+
+<div class="mobile-bar">
+  <div class="price" id="mb-total"></div>
+  <button class="btn" id="mb-book" type="button">Book now</button>
+</div>
+
+<div id="site-footer"></div>
+<script src="assets/app.js"></script>
+<script>initApartment();</script>
+</body>
+</html>
