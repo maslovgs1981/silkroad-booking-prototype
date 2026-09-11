@@ -338,6 +338,7 @@ h1.page-title { font-size: 40px; line-height: 1.15; font-weight: 600; margin: 14
   .filter .btn { grid-column: 1 / -1; min-height: 52px; }
   .apt-layout, .book-layout { grid-template-columns: 1fr; }
   .book-box { position: static; }
+  .book-layout .book-box { order: -1; }
   .gallery { height: 340px; }
   .footer nav { border-left: 0; padding-left: 0; }
   .footer .header-actions { margin-left: 0; }
